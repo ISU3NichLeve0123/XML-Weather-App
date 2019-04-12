@@ -24,16 +24,16 @@ namespace XMLWeather
             //Displays City Name, Day and Min and Max of the Next Three Days
             cityLabel.Text = Form1.days[0].location;
             dateLabel1.Text = Convert.ToDateTime(Form1.days[1].date).ToString("dddd");
-            minOutput.Text += Convert.ToDouble(Form1.days[1].tempLow).ToString("0.") + Form1.days[1].unit;
-            maxOutput.Text += Convert.ToDouble(Form1.days[1].tempHigh).ToString("0.") + Form1.days[1].unit;
+            minOutput.Text += Convert.ToDouble(Form1.days[1].tempHigh).ToString("0.") + Form1.days[1].unit;
+            maxOutput.Text += Convert.ToDouble(Form1.days[1].tempLow).ToString("0.") + Form1.days[1].unit;
 
             dateLabel2.Text = Convert.ToDateTime(Form1.days[2].date).ToString("dddd");
-            minOutput2.Text += Convert.ToDouble(Form1.days[2].tempLow).ToString("0.") + Form1.days[1].unit;
-            maxOutput2.Text += Convert.ToDouble(Form1.days[2].tempHigh).ToString("0.") + Form1.days[1].unit;
+            minOutput2.Text += Convert.ToDouble(Form1.days[2].tempHigh).ToString("0.") + Form1.days[1].unit;
+            maxOutput2.Text += Convert.ToDouble(Form1.days[2].tempLow).ToString("0.") + Form1.days[1].unit;
 
             dateLabel3.Text = Convert.ToDateTime(Form1.days[3].date).ToString("dddd");
-            minOutput3.Text += Convert.ToDouble(Form1.days[3].tempLow).ToString("0.") + Form1.days[1].unit; 
-            maxOutput3.Text += Convert.ToDouble(Form1.days[3].tempHigh).ToString("0.") + Form1.days[1].unit;
+            minOutput3.Text += Convert.ToDouble(Form1.days[3].tempHigh).ToString("0.") + Form1.days[1].unit; 
+            maxOutput3.Text += Convert.ToDouble(Form1.days[3].tempLow).ToString("0.") + Form1.days[1].unit;
         }
 
         //Goes to Current Screen When Click on Current Label
